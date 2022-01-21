@@ -37,13 +37,6 @@ def mb_msg(phone_num,template_param_list):
     response = sender.send_with_param(86, phone_num, template_id, template_param_list, sign=sms_sign)
 
 
-
-'''
-curr_dir = os.path.dirname(os.path.abspath(__file__))
-r=""
-'''
-
-
 for ifmt in ifmts:
     id = ifmt[0]
     pwd = ifmt[1]
