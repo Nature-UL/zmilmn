@@ -238,7 +238,7 @@ url2='https://qmsg.zendee.cn/group/'+KEY
 response = requests.post(url2,data=data)
 
 #微信server酱
-requests.post('http://sc.ftqq.com/SCT87757TzQZqm0wLV0yA1TiTWx0gongj.send', data={'title': "打卡", 'desp': Baogao, 'channel':'9|18})
+requests.post('http://sc.ftqq.com/SCT87757TzQZqm0wLV0yA1TiTWx0gongj.send', data={'title': "打卡", 'desp': Baogao, 'channel':'9|18'})
 requests.post('http://sc.ftqq.com/SCT97173TrbSWrZotAN9yfFwQzb6IuF19.send', data={'title': "打卡", 'desp': Baogao})
 
 #邮件
