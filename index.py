@@ -23,15 +23,15 @@ ifmts = [
     ['201802020129','87324@qweASDzxc','18739035312',['','成功'],'g','41','4113','河南省南阳市新野县'],
 ]
 
-baogao = '祝各位新春玉快，阖家欢洛，万似如意！\n'
-Baogao = '祝各位新春玉快，阖家欢洛，万似如意！\n\n'
+baogao = ''
+Baogao = ''
 
 #短信
 appid = '1400601132'  # 自己应用ID
 appkey = '13e2a897ede0197782fe093a934a5859'  # 自己应用Key
 sms_sign = '打卡报告'  # 自己腾讯云创建签名时填写的签名内容
 sender = SmsSingleSender(appid, appkey)
-template_id = '1295206'  #模板ID
+template_id = '1217189'  #模板ID
 
 def mb_msg(phone_num,template_param_list):
     response = sender.send_with_param(86, phone_num, template_id, template_param_list, sign=sms_sign)
@@ -242,6 +242,7 @@ requests.post('http://sc.ftqq.com/SCT87757TzQZqm0wLV0yA1TiTWx0gongj.send', data=
 requests.post('http://sc.ftqq.com/SCT97173TrbSWrZotAN9yfFwQzb6IuF19.send', data={'title': "打卡", 'desp': Baogao})
 
 #邮件
+'''
 mail_host = 'smtp.qq.com'  
 mail_user = 'wavevariation'  
 mail_pass = 'jxroiqmqrgydbcch'   
@@ -270,3 +271,4 @@ try:
   
 except smtplib.SMTPException as e:
     a = e
+'''
